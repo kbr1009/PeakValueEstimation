@@ -1,3 +1,0 @@
-#!/Users/reokobayashi/Jupyter/work/研究/PeakValueEstimation/env/bin/python3
-from numba.pycc import main
-main()
