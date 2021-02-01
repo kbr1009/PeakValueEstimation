@@ -8,3 +8,4 @@ python-dateutil==2.8.1
 sipy==0.3.1
 six==1.15.0
 toml==0.10.2
+librosa==0.8.0
