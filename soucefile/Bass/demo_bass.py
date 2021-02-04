@@ -3,6 +3,8 @@ from scipy import signal
 from scipy import fftpack
 import soundfile as sf
 from matplotlib import pyplot as plt 
+import matplotlib.pyplot as plt
+
 
 # オーバーラップをかける関数
 def ov(data, samplerate, Fs, overlap):
@@ -112,7 +114,7 @@ def findpeaks_2d(fft_array, dt, df, num_peaks, w, max_peaks):
  
     return freq_index_sort[:max_peaks], freq_peaks_sort[:max_peaks], time_index_sort[:max_peaks]
  
-path = '../../sound/piano1ch.wav'                         #ファイルパスを指定
+path = './sound/bass1ch.wav'                         #ファイルパスを指定
 data, samplerate = sf.read(path)            #wavファイルを読み込む
 x = np.arange(0, len(data)) / samplerate    #波形生成のための時間軸の作成
  
@@ -178,5 +180,5 @@ ax1.set_xlim(0, 5)
 ax1.set_ylim(0, 2000)
  
 # グラフを表示する。
-plt.show()
+plt.savefig("./plot_img/bass_peak.png")
 plt.close()
