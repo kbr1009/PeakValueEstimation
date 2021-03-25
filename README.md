@@ -12,7 +12,7 @@ $ source ./hoge/bin/activate
 ```
 $ pip install -r requirements.txt 
 ```
-## 4. 実行
+## 4. 実行(バスドラムの場合)
 ```
-$ python soundfile/Bass/demo_bass.py 
+$ python soundfile/Bass/peak.py 
 ```
